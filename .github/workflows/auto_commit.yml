@@ -1,4 +1,4 @@
-name: Daily Activity Bot
+name: Daily act Bot
 
 on:
   schedule:
@@ -25,12 +25,12 @@ jobs:
           fi
 
           # Оновлюємо файл часом останньої активності
-          echo "Останнє оновлення: $(date)" > activity.txt
+          echo "Останнє оновлення: $(date)" > act.txt
 
           # Налаштування локального користувача для коміту
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
           
-          git add activity.txt
-          git commit -m "docs: update activity logs [skip ci]"
+          git add act.txt
+          git commit -m "docs: update act logs [skip ci]"
           git push
