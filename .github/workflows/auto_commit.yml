@@ -3,7 +3,7 @@ name: Daily act Bot
 on:
   schedule:
     # Запуск кожні 4 години (можна змінити під себе)
-    - cron: '20 */4 * * *'
+    - cron: '20 */6 * * *'
   workflow_dispatch: # Дозволяє запускати вручну для перевірки
 
 jobs:
